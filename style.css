@@ -1,0 +1,255 @@
+* {box-sizing: border-box;}
+
+body {margin: 0;}
+
+html {
+	font-family: "Helvetica", sans-serif;
+	/*background-color: #F0CC99;*/
+	font-size: 20px;
+}
+
+h1 {
+	font-family: "Futura", sans-serif;
+	font-weight: 100;
+	font-size: 45px;
+	padding: 0;
+	margin: 0;
+	line-height: 110%;
+}
+
+h2 {
+	padding: 0 0 10px 0;
+	margin: 0px;
+	margin-bottom: 15px;
+	font-size: 28px;
+	font-family: "Arial-Black", "Arial", sans-serif;
+	line-height: 100%;
+}
+
+h4 {
+	padding: 0;
+	margin: 0px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 100;
+}
+
+p {
+	max-width: 80ex;
+}
+
+article {
+	padding: 40px 20px 0px 20px;
+}
+
+#illustrations {
+	display: none;
+}
+
+/* ---------------- Shortcuts ------------------*/
+
+#shortcuts {
+	/*background-color: #f4f4f4;*/
+	min-height: 100vh;
+}
+
+#shortcuts a {
+	color: white;
+	text-decoration: none;
+}
+
+/*
+#shortcuts a:hover {
+	background-color: black;
+}
+*/
+
+.engineering {background-color: #0095d1;}
+
+.softskills {background-color: #CC006A;}
+
+.subcategory {
+ padding: 12px;
+	float: left;
+	width: 97%;
+	height: 200px;
+	margin: 5px;
+}
+
+.tag {
+	float: left;
+	border: 2px;
+	border-style: solid;
+	padding: 7px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 800;
+}
+
+.summary {
+	height: auto;
+	width: 98%;
+	border: 2px;
+	border-style: solid;
+	border-color: black;
+}
+
+/* ---------------- Menubar ---------------- */
+
+#menubar {
+	background-color: #E47823;
+	color: white;
+	width: 100%;
+	display: block;
+	position: fixed;
+}
+
+#menubar a {
+	color: white;
+	text-decoration: none;
+}
+
+#myTitle {
+	background-color: #E47823;
+	text-align: left;
+	padding: 16px 16px;
+	font-size: 20px;
+	margin: 0;
+	width: 100%;
+	position: fixed;
+	visibility: hidden;
+}
+
+#icon {
+	position: fixed;
+	display: block;
+	right: 0;
+	top: 0;
+	font-size: 20px;
+	padding: 16px;
+}
+
+#icon:hover {
+	background-color: white;
+	color: black;
+}
+
+.topnav a {
+	text-align: left;
+	padding: 14px 16px;
+	font-size: 20px;
+	transition: 0.2s;
+	background-color: #E47823;
+	display: none;
+}
+
+.topnav a:hover {
+	background-color: white;
+	color: black;
+}
+
+.topnav.responsive a {display: block;}
+
+/* ---------------- Aside ---------------- */
+aside {
+	width: 100%;
+	overflow: hidden;
+	color: white;
+	background-color: #E47823;
+	padding: 1em;
+}
+
+
+.me img {
+	width: 40%;
+	max-width: 200px;
+	float: left;
+	padding-right: 1em;
+}
+
+#name {
+	width: 60%;
+	float: left;
+}
+
+/* ---------------- Social Media ---------------- */
+
+.some {float:left;}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	text-align: center;
+	text-decoration: none;
+	margin: 0 8px 0 0;
+	background-color: white;
+	color: white;
+
+}
+.fa:hover {
+	background-color: black;
+	color: white;
+}
+
+.fa-linkedin {
+	background-color: #007bb5;
+}
+
+.fa-github {
+	background-color: darkslategray;
+}
+
+.fa-envelope-o {
+	background-color: floralwhite;
+	color: black;
+}
+
+
+/* ---------------- Responsive ---------------- */
+
+[class*="col-"] {
+	float: left;
+	width: 100%;
+}
+
+.col-1 {width: 50%;}
+
+@media only screen and (min-width: 900px) {
+	.col-1 {width: 33.3%;}
+	.col-2 {width: 100%;}
+}
+
+@media only screen and (min-width: 1200px) {
+	.col-1 {width: 33.3%;}
+	.col-3 {width: 70%;}
+	.col-4 {width: 30%;}
+	aside {
+		height: 100%;
+	}
+	#myAside {
+		width: 240px;
+		position: fixed;
+	}
+	section {
+		float:left;
+		margin-left: 240px;
+		padding: 10px 0px 10px 0px;
+		min-height: 100vh;
+	}
+	#illustrations {
+		display: inherit;
+		right: 0;
+	}
+	.me img {width: 100%;padding: 0  0 1em 0;}
+	.me #name {width: 100%;}
+	#menubar {display: none}
+	#shortcuts, article {
+		padding: 10px 0px 0px 40px;
+	}
+}
+
+@media only screen and (min-width: 1600px) {
+	.col-1 {width: 33.3%;}
+}
