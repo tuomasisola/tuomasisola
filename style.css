@@ -3,56 +3,85 @@
 body {margin: 0;}
 
 html {
-	font-family: "Helvetica", sans-serif;
-	/*background-color: #F0CC99;*/
-	font-size: 20px;
+    font-family: "Avenir", "Helvetica", "Arial", sans-serif;
+    /*background-color: #F0CC99;*/
+    font-size: 25px;
+    padding: 1em;
 }
 
+
 h1 {
-	font-family: "Futura", sans-serif;
-	font-weight: 100;
-	font-size: 45px;
-	padding: 0;
-	margin: 0;
-	line-height: 110%;
+    font-family: "Futura", "GlacialIndifferenceRegular", sans-serif;
+    font-weight: 100;
+    font-size: 48px;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    line-height: 110%;
 }
 
 h2 {
-	padding: 0 0 10px 0;
-	margin: 0px;
-	margin-bottom: 15px;
-	font-size: 28px;
-	font-family: "Arial-Black", "Arial", sans-serif;
-	line-height: 100%;
+    padding: 0 0 10px 0;
+    margin: 0px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-family: "Futura", "GlacialIndifferenceBold", sans-serif;
+    line-height: 100%;
 }
 
+h3 {
+    margin: 0px;
+    margin-left: 5px;
+    font-size: 30px;
+    font-family: "Futura", "GlacialIndifferenceBold", sans-serif;
+    letter-spacing: 1px;
+}
+
+
 h4 {
-	padding: 0;
-	margin: 0px;
-	margin-top: 10px;
-	margin-bottom: 30px;
-	font-size: 18px;
-	font-weight: 100;
+    padding: 0;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+h5 {
+    color: #333333;
+    padding: 45px 0 45px 0;
+    margin: 0;
+    font-size: 40px;
+    font-family: "Futura", "GlacialIndifferenceBold", sans-serif;
+    line-height: 130%;
+    letter-spacing: 1px;
+}
+
+h5 span {
+    background-color: #E47823;
 }
 
 p {
-	max-width: 80ex;
+	   max-width: 80ex;
+    margin-top: 0;
+    
 }
 
 article {
-	padding: 40px 20px 0px 20px;
+    width: 100%;
+    float: left;
+    padding-top: 20px;
 }
 
 #illustrations {
-	display: none;
+    display: none;
+}
+
+section {
+    float:left;
 }
 
 /* ---------------- Shortcuts ------------------*/
-
-#shortcuts {
-	/*background-color: #f4f4f4;*/
-	min-height: 100vh;
-}
 
 #shortcuts a {
 	color: white;
@@ -70,10 +99,9 @@ article {
 .softskills {background-color: #CC006A;}
 
 .subcategory {
- padding: 12px;
+ padding: 18px;
 	float: left;
 	width: 97%;
-	height: 200px;
 	margin: 5px;
 }
 
@@ -84,99 +112,41 @@ article {
 	padding: 7px;
 	margin-right: 10px;
 	margin-bottom: 10px;
-	font-size: 16px;
-	font-weight: 800;
+	font-size: 19px;
+	font-weight: 500;
 }
 
 .summary {
-	height: auto;
-	width: 98%;
+	width: auto;
 	border: 2px;
 	border-style: solid;
 	border-color: black;
 }
 
-/* ---------------- Menubar ---------------- */
-
-#menubar {
-	background-color: #E47823;
-	color: white;
-	width: 100%;
-	display: block;
-	position: fixed;
-}
-
-#menubar a {
-	color: white;
-	text-decoration: none;
-}
-
-#myTitle {
-	background-color: #E47823;
-	text-align: left;
-	padding: 16px 16px;
-	font-size: 20px;
-	margin: 0;
-	width: 100%;
-	position: fixed;
-	visibility: hidden;
-}
-
-#icon {
-	position: fixed;
-	display: block;
-	right: 0;
-	top: 0;
-	font-size: 20px;
-	padding: 16px;
-}
-
-#icon:hover {
-	background-color: white;
-	color: black;
-}
-
-.topnav a {
-	text-align: left;
-	padding: 14px 16px;
-	font-size: 20px;
-	transition: 0.2s;
-	background-color: #E47823;
-	display: none;
-}
-
-.topnav a:hover {
-	background-color: white;
-	color: black;
-}
-
-.topnav.responsive a {display: block;}
-
 /* ---------------- Aside ---------------- */
 aside {
-	width: 100%;
-	overflow: hidden;
-	color: white;
-	background-color: #E47823;
-	padding: 1em;
+    text-align: center;
 }
 
-
-.me img {
-	width: 40%;
-	max-width: 200px;
-	float: left;
-	padding-right: 1em;
+#mypic {
+    width: 150px;
+    height: 150px;
+    background-image: url('images/omakuva-small.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 #name {
-	width: 60%;
-	float: left;
+    width: 100%;
+    float: left;
 }
 
 /* ---------------- Social Media ---------------- */
 
-.some {float:left;}
+#some {margin: auto;}
 
 .fa {
 	padding: 15px;
@@ -201,55 +171,79 @@ aside {
 	background-color: darkslategray;
 }
 
-.fa-envelope-o {
-	background-color: floralwhite;
-	color: black;
+.fa-envelope {
+	background-color: darkgrey;
 }
 
 
 /* ---------------- Responsive ---------------- */
 
 [class*="col-"] {
-	float: left;
-	width: 100%;
+    float: left;
+    width: 100%;
 }
 
-.col-1 {width: 50%;}
+@media only screen and (min-width: 600px) {
+    .col-1 {width: 50%;}
+    .subcategory {height: 220px;}
+    .summary {height: auto;}
+}
 
 @media only screen and (min-width: 900px) {
-	.col-1 {width: 33.3%;}
-	.col-2 {width: 100%;}
+    .col-1 {width: 33.3%;}
+    .col-4 {width: 60%;}
+    .col-5 {width: 40%;}
+    aside {
+        text-align: left;
+    }
+    h5 {
+        padding: 0 0 0 20px;
+    }
+    #mypic {
+        background-image: url('images/omakuva.jpg');
+        float: left;
+        margin:  0;
+        border-radius: 0;
+        height: 250px;
+        width: 30%;
+    }
+    #name {
+        width: 60%;
+        padding-left: 20px;
+    }
+    #some {
+        margin: 0;
+        float: left;
+        padding-left: 20px;
+    }
 }
 
-@media only screen and (min-width: 1200px) {
-	.col-1 {width: 33.3%;}
-	.col-3 {width: 70%;}
-	.col-4 {width: 30%;}
-	aside {
-		height: 100%;
-	}
-	#myAside {
-		width: 240px;
-		position: fixed;
-	}
-	section {
-		float:left;
-		margin-left: 240px;
-		padding: 10px 0px 10px 0px;
-		min-height: 100vh;
-	}
-	#illustrations {
-		display: inherit;
-		right: 0;
-	}
-	.me img {width: 100%;padding: 0  0 1em 0;}
-	.me #name {width: 100%;}
-	#menubar {display: none}
-	#shortcuts, article {
-		padding: 10px 0px 0px 40px;
-	}
+@media only screen and (min-width: 1100px) {
+    .col-1 {width: 25%;}
+
 }
 
+@media only screen and (min-width: 1300px) {
+    .col-1 {width: 33.3%;}
+    .col-2 {width: 66.6%;}
+    .col-3 {width: 33.3%;}
+    .col-4 {width: 100%;}
+    .col-5 {width: 100%;}
+    h5 {padding: 55px 30px 0 0;}
+    article {padding-top: 0;}
+    #iam {padding-top: 20px;}
+    #mypic {width: 40%;}
+}
 @media only screen and (min-width: 1600px) {
-	.col-1 {width: 33.3%;}
+    .col-1 {width: 25%;}
+    .col-2 {width: 70%;}
+    .col-3 {width: 30%;}
 }
+
+@media only screen and (min-width: 1800px) {
+    .col-1 {width: 20%;}
+    .col-2 {width: 75%;}
+    .col-3 {width: 25%;}
+
+}
+
